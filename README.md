@@ -44,6 +44,8 @@ Screenshots are generated with [VHS](https://github.com/charmbracelet/vhs) from 
 ```lua
 {
   "aisk/kukishinobu.vim",
+  lazy = false,
+  priority = 1000,
   config = function()
     vim.cmd("colorscheme kukishinobu")
   end,
