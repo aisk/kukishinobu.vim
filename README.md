@@ -1,29 +1,29 @@
 # kukishinobu.vim
 
-<img src="https://pbs.twimg.com/media/FO7hVQTXsAM5JcS?format=jpg&name=large" alt="Kuki Shinobu" align="right" width="130" hspace="16">
+<img src="https://pbs.twimg.com/media/FO7hVQTXsAM5JcS?format=jpg&name=large" alt="Kuki Shinobu" align="right" width="260" hspace="16">
 
 A dark Vim/Neovim colorscheme inspired by the official character art of **Kuki Shinobu** from *Genshin Impact*.
-
-## Palette
 
 Colors are drawn from the character illustration — deep purple backgrounds, her signature green hair, crimson armor plates, and golden accents — and tuned for contrast. Blue and cyan are complementary additions.
 
 <br clear="right">
 
-| Base | Hex | Source | Accent | Hex | Source |
-|------|-----|--------|--------|-----|--------|
-| ![](https://placehold.co/16x16/1a1225/1a1225) `bg0` | `#1a1225` | Deep purple background | ![](https://placehold.co/16x16/8bc34a/8bc34a) `green` | `#8bc34a` | Hair — strings |
-| ![](https://placehold.co/16x16/241838/241838) `bg1` | `#241838` | Cursor line | ![](https://placehold.co/16x16/a5d46a/a5d46a) `ltgreen` | `#a5d46a` | Hair highlight — escape chars |
-| ![](https://placehold.co/16x16/2e2048/2e2048) `bg2` | `#2e2048` | Status line / popup menu | ![](https://placehold.co/16x16/e0607e/e0607e) `red` | `#e0607e` | Armor plates — keywords |
-| ![](https://placehold.co/16x16/3a2c55/3a2c55) `bg3` | `#3a2c55` | Visual selection / float | ![](https://placehold.co/16x16/f08ca0/f08ca0) `ltred` | `#f08ca0` | Ribbons — labels |
-| ![](https://placehold.co/16x16/4a3868/4a3868) `bg4` | `#4a3868` | Indent guides | ![](https://placehold.co/16x16/a48ee6/a48ee6) `purple` | `#a48ee6` | Backdrop violet — functions |
-| ![](https://placehold.co/16x16/e8ddf0/e8ddf0) `fg0` | `#e8ddf0` | Bright text | ![](https://placehold.co/16x16/b490d0/b490d0) `ltpurp` | `#b490d0` | Outfit trim — types |
-| ![](https://placehold.co/16x16/d8d2e2/d8d2e2) `fg1` | `#d8d2e2` | Normal text | ![](https://placehold.co/16x16/dcc088/dcc088) `gold` | `#dcc088` | Gold accents — constants, warnings |
-| ![](https://placehold.co/16x16/aca2bd/aca2bd) `fg2` | `#aca2bd` | Dimmed text | ![](https://placehold.co/16x16/ead6a4/ead6a4) `ltgold` | `#ead6a4` | Gold trim — special chars |
-| ![](https://placehold.co/16x16/9488aa/9488aa) `fg3` | `#9488aa` | Comments | ![](https://placehold.co/16x16/6888b8/6888b8) `blue` | `#6888b8` | Cool complement — identifiers |
-| ![](https://placehold.co/16x16/75659a/75659a) `fg4` | `#75659a` | Line numbers / borders | ![](https://placehold.co/16x16/88a8d0/88a8d0) `ltblue` | `#88a8d0` | Light blue — tags |
-|  | |  | ![](https://placehold.co/16x16/5ea8a0/5ea8a0) `cyan` | `#5ea8a0` | Complement — operators |
-|  | |  | ![](https://placehold.co/16x16/80c0b8/80c0b8) `ltcyan` | `#80c0b8` | Light teal — info/added |
+## Palette
+
+| Base | Hex | Usage | Accent | Hex | Usage |
+|------|-----|-------|--------|-----|-------|
+| ![](https://placehold.co/16x16/1a1225/1a1225) `bg0` | `#1a1225` | Background | ![](https://placehold.co/16x16/8bc34a/8bc34a) `green` | `#8bc34a` | Strings |
+| ![](https://placehold.co/16x16/241838/241838) `bg1` | `#241838` | Cursor line | ![](https://placehold.co/16x16/a5d46a/a5d46a) `ltgreen` | `#a5d46a` | Escapes |
+| ![](https://placehold.co/16x16/2e2048/2e2048) `bg2` | `#2e2048` | Status line, menus | ![](https://placehold.co/16x16/e0607e/e0607e) `red` | `#e0607e` | Keywords |
+| ![](https://placehold.co/16x16/3a2c55/3a2c55) `bg3` | `#3a2c55` | Selection, floats | ![](https://placehold.co/16x16/f08ca0/f08ca0) `ltred` | `#f08ca0` | Labels |
+| ![](https://placehold.co/16x16/4a3868/4a3868) `bg4` | `#4a3868` | Indent guides | ![](https://placehold.co/16x16/a48ee6/a48ee6) `purple` | `#a48ee6` | Functions |
+| ![](https://placehold.co/16x16/e8ddf0/e8ddf0) `fg0` | `#e8ddf0` | Bright text | ![](https://placehold.co/16x16/b490d0/b490d0) `ltpurp` | `#b490d0` | Types |
+| ![](https://placehold.co/16x16/d8d2e2/d8d2e2) `fg1` | `#d8d2e2` | Normal text | ![](https://placehold.co/16x16/dcc088/dcc088) `gold` | `#dcc088` | Constants, warnings |
+| ![](https://placehold.co/16x16/aca2bd/aca2bd) `fg2` | `#aca2bd` | Dimmed text | ![](https://placehold.co/16x16/ead6a4/ead6a4) `ltgold` | `#ead6a4` | Special chars |
+| ![](https://placehold.co/16x16/9488aa/9488aa) `fg3` | `#9488aa` | Comments | ![](https://placehold.co/16x16/6888b8/6888b8) `blue` | `#6888b8` | Links, changes |
+| ![](https://placehold.co/16x16/75659a/75659a) `fg4` | `#75659a` | Line numbers | ![](https://placehold.co/16x16/88a8d0/88a8d0) `ltblue` | `#88a8d0` | Tags |
+|  | |  | ![](https://placehold.co/16x16/5ea8a0/5ea8a0) `cyan` | `#5ea8a0` | Operators |
+|  | |  | ![](https://placehold.co/16x16/80c0b8/80c0b8) `ltcyan` | `#80c0b8` | Info, additions |
 
 ## Preview
 
