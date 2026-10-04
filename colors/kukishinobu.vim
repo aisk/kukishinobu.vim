@@ -20,36 +20,36 @@ let s:hi = function('kukishinobu#hi')
 " -----------------------------------------------------------------------------
 call s:hi('Normal',       'fg1',    'bg0')
 call s:hi('NormalFloat',  'fg1',    'bg3')
-call s:hi('FloatBorder',  'bg4',    'bg3')
+call s:hi('FloatBorder',  'fg4',    'bg3')
 call s:hi('FloatTitle',   'purple', 'bg3',    'bold')
 call s:hi('Cursor',       'bg0',    'fg0')
 call s:hi('CursorLine',   'none',   'bg1')
 call s:hi('CursorColumn', 'none',   'bg1')
 call s:hi('ColorColumn',  'none',   'bg1')
-call s:hi('LineNr',       'bg4',    'none')
+call s:hi('LineNr',       'fg4',    'none')
 call s:hi('CursorLineNr', 'gold',   'bg1',    'bold')
 call s:hi('SignColumn',   'none',   'none')
 call s:hi('VertSplit',    'bg3',    'none')
 call s:hi('WinSeparator', 'bg3',    'none')
 call s:hi('StatusLine',   'fg2',    'bg2')
-call s:hi('StatusLineNC', 'bg4',    'bg1')
+call s:hi('StatusLineNC', 'fg4',    'bg1')
 call s:hi('TabLine',      'fg3',    'bg1')
 call s:hi('TabLineSel',   'fg0',    'bg3',    'bold')
 call s:hi('TabLineFill',  'none',   'bg1')
 call s:hi('WinBar',       'fg2',    'none')
-call s:hi('WinBarNC',     'bg4',    'none')
+call s:hi('WinBarNC',     'fg4',    'none')
 
 " Folding & special lines
 call s:hi('Folded',       'fg3',    'bg1')
-call s:hi('FoldColumn',   'bg4',    'none')
+call s:hi('FoldColumn',   'fg4',    'none')
 call s:hi('NonText',      'bg3',    'none')
-call s:hi('SpecialKey',   'bg4',    'none')
+call s:hi('SpecialKey',   'fg4',    'none')
 call s:hi('EndOfBuffer',  'bg0',    'none')
 call s:hi('Conceal',      'fg3',    'none')
 
 " Search & selection
-call s:hi('Visual',       'none',   'bg2')
-call s:hi('VisualNOS',    'none',   'bg2')
+call s:hi('Visual',       'none',   'bg3')
+call s:hi('VisualNOS',    'none',   'bg3')
 call s:hi('Search',       'bg0',    'gold',    'bold')
 call s:hi('IncSearch',    'bg0',    'ltgold',  'bold')
 call s:hi('CurSearch',    'bg0',    'ltgold',  'bold')
@@ -57,13 +57,13 @@ call s:hi('Substitute',   'bg0',    'ltred')
 
 " Popup & completion menu
 call s:hi('Pmenu',        'fg2',    'bg2')
-call s:hi('PmenuSel',     'fg0',    'bg3',    'bold')
+call s:hi('PmenuSel',     'fg0',    'bg4',    'bold')
 call s:hi('PmenuSbar',    'none',   'bg2')
-call s:hi('PmenuThumb',   'none',   'bg4')
+call s:hi('PmenuThumb',   'none',   'fg4')
 
 " Messages
 call s:hi('ErrorMsg',     'red',    'none',   'bold')
-call s:hi('WarningMsg',   'ltred',  'none',   'bold')
+call s:hi('WarningMsg',   'gold',   'none',   'bold')
 call s:hi('MoreMsg',      'green',  'none',   'bold')
 call s:hi('ModeMsg',      'fg2',    'none',   'bold')
 call s:hi('Question',     'cyan',   'none',   'bold')
@@ -71,13 +71,13 @@ call s:hi('Title',        'purple', 'none',   'bold')
 
 " Diff
 call s:hi('DiffAdd',      'none',   'none')
-highlight DiffAdd guibg=#1e2a18 ctermbg=22
+highlight DiffAdd guibg=#263a1c ctermbg=22
 call s:hi('DiffChange',   'none',   'none')
-highlight DiffChange guibg=#1e1a30 ctermbg=17
+highlight DiffChange guibg=#2a2450 ctermbg=17
 call s:hi('DiffDelete',   'red',    'none')
-highlight DiffDelete guibg=#2a1820 ctermbg=52
+highlight DiffDelete guibg=#40192a ctermbg=52
 call s:hi('DiffText',     'none',   'none',   'bold')
-highlight DiffText guibg=#2a2848 ctermbg=17
+highlight DiffText guibg=#3d3570 ctermbg=17
 
 " Spelling
 call s:hi('SpellBad',     'none',   'none',   'undercurl', 'red')
@@ -143,18 +143,18 @@ call s:hi('Removed',      'red',    'none')
 " Diagnostics (Neovim)
 " -----------------------------------------------------------------------------
 call s:hi('DiagnosticError',          'red',    'none')
-call s:hi('DiagnosticWarn',           'ltred',  'none')
+call s:hi('DiagnosticWarn',           'gold',   'none')
 call s:hi('DiagnosticInfo',           'ltcyan', 'none')
 call s:hi('DiagnosticHint',           'ltpurp', 'none')
 call s:hi('DiagnosticOk',             'green',  'none')
 call s:hi('DiagnosticUnderlineError', 'none',   'none',  'undercurl', 'red')
-call s:hi('DiagnosticUnderlineWarn',  'none',   'none',  'undercurl', 'ltred')
+call s:hi('DiagnosticUnderlineWarn',  'none',   'none',  'undercurl', 'gold')
 call s:hi('DiagnosticUnderlineInfo',  'none',   'none',  'undercurl', 'ltcyan')
 call s:hi('DiagnosticUnderlineHint',  'none',   'none',  'undercurl', 'ltpurp')
 
 " Diagnostic virtual text
 call s:hi('DiagnosticVirtualTextError', 'red',    'bg1')
-call s:hi('DiagnosticVirtualTextWarn',  'ltred',  'bg1')
+call s:hi('DiagnosticVirtualTextWarn',  'gold',   'bg1')
 call s:hi('DiagnosticVirtualTextInfo',  'ltcyan', 'bg1')
 call s:hi('DiagnosticVirtualTextHint',  'ltpurp', 'bg1')
 
@@ -260,9 +260,9 @@ call s:hi('GitSignsChangedelete', 'ltred',  'none')
 " Telescope (Neovim)
 " -----------------------------------------------------------------------------
 call s:hi('TelescopeNormal',        'fg1',    'bg1')
-call s:hi('TelescopeBorder',        'bg4',    'bg1')
+call s:hi('TelescopeBorder',        'fg4',    'bg1')
 call s:hi('TelescopePromptNormal',  'fg1',    'bg2')
-call s:hi('TelescopePromptBorder',  'bg4',    'bg2')
+call s:hi('TelescopePromptBorder',  'fg4',    'bg2')
 call s:hi('TelescopePromptTitle',   'bg0',    'purple', 'bold')
 call s:hi('TelescopePreviewTitle',  'bg0',    'green',  'bold')
 call s:hi('TelescopeResultsTitle',  'bg0',    'cyan',   'bold')
@@ -288,7 +288,7 @@ highlight! link LazyH1          TabLineSel
 call s:hi('WhichKey',          'purple', 'none',  'bold')
 call s:hi('WhichKeyGroup',    'ltpurp', 'none')
 call s:hi('WhichKeyDesc',     'fg2',    'none')
-call s:hi('WhichKeySeparator', 'bg4',   'none')
+call s:hi('WhichKeySeparator', 'fg4',   'none')
 call s:hi('WhichKeyFloat',    'none',   'bg1')
 
 " vim: set sw=2 ts=2 et:

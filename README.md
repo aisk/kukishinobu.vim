@@ -4,23 +4,36 @@ A dark Vim/Neovim colorscheme inspired by the official character art of **Kuki S
 
 ![Kuki Shinobu](https://pbs.twimg.com/media/FO7hVQTXsAM5JcS?format=jpg&name=large)
 
+## Preview
+
+| Python | Go |
+|--------|----|
+| ![Python](screenshots/python.png) | ![Go](screenshots/go.png) |
+
+| Rust | Lua |
+|------|-----|
+| ![Rust](screenshots/rust.png) | ![Lua](screenshots/lua.png) |
+
+Screenshots are generated with [VHS](https://github.com/charmbracelet/vhs) from [`screenshots/preview.tape`](screenshots/preview.tape).
+
 ## Palette
 
-Colors are extracted directly from the character illustration — deep purple backgrounds, her signature green hair, crimson armor plates, and golden accents.
+Colors are drawn from the character illustration — deep purple backgrounds, her signature green hair, crimson armor plates, and golden accents — and tuned for contrast. Blue and cyan are complementary additions.
 
 ### Base
 
 | Role | Preview | Hex | Source |
 |------|---------|-----|--------|
 | `bg0` | ![](https://placehold.co/16x16/1a1225/1a1225) | `#1a1225` | Deep purple background |
-| `bg1` | ![](https://placehold.co/16x16/241838/241838) | `#241838` | Subtle highlight |
-| `bg2` | ![](https://placehold.co/16x16/2e2048/2e2048) | `#2e2048` | Visual selection |
-| `bg3` | ![](https://placehold.co/16x16/3a2c55/3a2c55) | `#3a2c55` | Float / border |
-| `bg4` | ![](https://placehold.co/16x16/4a3868/4a3868) | `#4a3868` | Line numbers |
+| `bg1` | ![](https://placehold.co/16x16/241838/241838) | `#241838` | Cursor line |
+| `bg2` | ![](https://placehold.co/16x16/2e2048/2e2048) | `#2e2048` | Status line / popup menu |
+| `bg3` | ![](https://placehold.co/16x16/3a2c55/3a2c55) | `#3a2c55` | Visual selection / float |
+| `bg4` | ![](https://placehold.co/16x16/4a3868/4a3868) | `#4a3868` | Indent guides / menu selection |
 | `fg0` | ![](https://placehold.co/16x16/e8ddf0/e8ddf0) | `#e8ddf0` | Bright text |
-| `fg1` | ![](https://placehold.co/16x16/d0c0e0/d0c0e0) | `#d0c0e0` | Normal text |
-| `fg2` | ![](https://placehold.co/16x16/b098c8/b098c8) | `#b098c8` | Dimmed text |
-| `fg3` | ![](https://placehold.co/16x16/8870a0/8870a0) | `#8870a0` | Comments |
+| `fg1` | ![](https://placehold.co/16x16/d8d2e2/d8d2e2) | `#d8d2e2` | Normal text |
+| `fg2` | ![](https://placehold.co/16x16/aca2bd/aca2bd) | `#aca2bd` | Dimmed text |
+| `fg3` | ![](https://placehold.co/16x16/9488aa/9488aa) | `#9488aa` | Comments |
+| `fg4` | ![](https://placehold.co/16x16/75659a/75659a) | `#75659a` | Line numbers / borders |
 
 ### Accents
 
@@ -28,12 +41,12 @@ Colors are extracted directly from the character illustration — deep purple ba
 |------|---------|-----|--------|
 | `green` | ![](https://placehold.co/16x16/8bc34a/8bc34a) | `#8bc34a` | Hair — strings |
 | `ltgreen` | ![](https://placehold.co/16x16/a5d46a/a5d46a) | `#a5d46a` | Hair highlight — escape chars |
-| `red` | ![](https://placehold.co/16x16/c0384a/c0384a) | `#c0384a` | Armor plates — keywords |
-| `ltred` | ![](https://placehold.co/16x16/d85868/d85868) | `#d85868` | Ribbons — warnings |
-| `purple` | ![](https://placehold.co/16x16/9b6dbd/9b6dbd) | `#9b6dbd` | Outfit — functions |
+| `red` | ![](https://placehold.co/16x16/e0607e/e0607e) | `#e0607e` | Armor plates — keywords |
+| `ltred` | ![](https://placehold.co/16x16/f08ca0/f08ca0) | `#f08ca0` | Ribbons — labels |
+| `purple` | ![](https://placehold.co/16x16/a48ee6/a48ee6) | `#a48ee6` | Backdrop violet — functions |
 | `ltpurp` | ![](https://placehold.co/16x16/b490d0/b490d0) | `#b490d0` | Outfit trim — types |
-| `gold` | ![](https://placehold.co/16x16/d4a850/d4a850) | `#d4a850` | Metallic accents — constants |
-| `ltgold` | ![](https://placehold.co/16x16/e0c070/e0c070) | `#e0c070` | Gold trim — special chars |
+| `gold` | ![](https://placehold.co/16x16/dcc088/dcc088) | `#dcc088` | Metallic accents — constants, warnings |
+| `ltgold` | ![](https://placehold.co/16x16/ead6a4/ead6a4) | `#ead6a4` | Gold trim — special chars |
 | `blue` | ![](https://placehold.co/16x16/6888b8/6888b8) | `#6888b8` | Cool complement — identifiers |
 | `ltblue` | ![](https://placehold.co/16x16/88a8d0/88a8d0) | `#88a8d0` | Light blue — tags |
 | `cyan` | ![](https://placehold.co/16x16/5ea8a0/5ea8a0) | `#5ea8a0` | Complement — operators |
